@@ -61,14 +61,42 @@ body{
     color: rgb(2, 1, 1);
 }  
 
+/*-------Media Query--------*/
+@media screen and (max-width:1200px){
 
+}
+
+@media screen and (max-width:780px) {
+    
+}
+@media screen and (max-width:530px)
+{
+    .calci{
+    margin:12vh;
+    background-color: rgb(235, 230, 230);
+    width:60%;
+    padding-left:4.5vh;
+    padding-bottom: 4vh; 
+    background-repeat: no-repeat;
+}
+}
+@media screen and (max-width:480px){
+.calci{
+    margin:7vh;
+    background-color: rgb(235, 230, 230);
+    width:65%;
+    padding-left:4.5vh;
+    padding-bottom: 4vh; 
+    background-repeat: no-repeat;
+}
+}
 </style>
 </head>
 <body>
 <form name="calculator">
 <div class="calci">
    <h2>CALCULATOR </h2>
-    <input type="textfield" class="textfld" name="ans" value=""><br>
+    <input type="textfield" class="textfld" name="ans" value="" readonly><br>
 <input type="button" value="1" id="numeric" onClick="document.calculator.ans.value+='1'">
 <input type="button" value="2" id="numeric" onClick="document.calculator.ans.value+='2'">
 <input type="button" value="3" id="numeric" onClick="document.calculator.ans.value+='3'">
@@ -83,7 +111,7 @@ body{
 <input type="button" value="*" id="arithmetics" onClick="document.calculator.ans.value+='*'"><br>
 <input type="button" value="0" id="numeric" onClick="document.calculator.ans.value+='0'">
 <input type="button" value="=" id="arithmetics"onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
-<input type="reset" value="Reset" id="arithmetics">
+<input type="reset" value="C" id="arithmetics">
 <input type="button" value="/" id="arithmetics" onClick="document.calculator.ans.value+='/'">
 </div>
 </form>
